@@ -2,16 +2,819 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Complete Responsive Online Boot Store Website Design Tutorial</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Simple Project</h1>
-        <p>Click the button below to change the background color.</p>
-        <button onclick="changeColor()">Change Color</button>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> BOOKSTORE </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"  ><a href="#search"></a></label>
+        </form>
+
+             <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+    
+        </div>
+
     </div>
-    <script src="script.js"></script>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured">featured</a>
+            <a href="#arrivals">arrivals</a>
+            <a href="#reviews">reviews</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+    <a href="#login" class="fas fa-user"></a>
+</nav>
+
+<!-- login form  -->
+
+<div class="login-form-container">
+    <a href="#login"></a>
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <a href="php/login.php"></a>
+        <p>forget password ? <a href="html/forget.html">click here</a></p>
+        <p>don't have an account ? <a href="html/forget.html">create one</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>upto 75% off &#127881;</h3>
+            <h2>Special Discount for kannada Books.. &#127881; &#127881; &#127881;</h2>
+            <p>CHECK OUT OUR LATEST LAUNCH!!<br>subscribe now to get upto 75% offer</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/1book.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-2.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book3.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-4.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book5.jpeg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book7.jpeg" alt=""></a>
+                
+               
+            </div>
+            <img src="image/stand.png" class="stand" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- home section ense  -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>free shipping</h3>
+            <p>order over ₹250</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>secure payment</h3>
+            <p>100 secure payment</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>easy returns</h3>
+            <p>10 days returns</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7 support</h3>
+            <p>call us anytime</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- icons section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured books</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Be Happy</h3>
+                    <div class="price">₹99 <span>₹100.00</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Design and analysis of algorithm</h3>
+                    <div class="price">₹159 <span>₹200/span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Data Communication and Networking</h3>
+                    <div class="price">₹199 <span>₹209</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-4.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Learn HINDI in 30 days</h3>
+                    <div class="price">₹99 <span>₹100</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-5.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Linux OS</h3>
+                    <div class="price">₹100 <span>₹150</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>ETHICAL HACKING</h3>
+                    <div class="price">₹200 <span>₹250</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-7.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>CYBER SECURITY</h3>
+                    <div class="price">₹399 <span>₹499</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-8.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Introduction to digital and logical & boolean algebra</h3>
+                    <div class="price">₹299 <span>₹349</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-9.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Learn KANNADA in 30 Days</h3><h1>Special discount so learn KANNADA fast</h1>  &#129297; &#129297; &#129297;</h1>
+                    <div class="price">₹150 <span>₹200</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-10.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cyber Security and Awareness</h3>
+                    <div class="price">₹149.00<span>₹199.00</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>new arrivals</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Be HAPPY</h3>
+                    <div class="price">₹99 <span>₹100</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Design and Analysis of Algorithm </h3>
+                    <div class="price">₹159 <span>₹200</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Data Communication and Networking</h3>
+                    <div class="price">₹199 <span>₹209</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-4.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Learn HINDI in 30 Days</h3>
+                    <div class="price">₹99 <span>₹100</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-5.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Linux</h3>
+                    <div class="price">₹150 <span>₹100</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cyber Security</h3>
+                    <div class="price">₹200 <span>₹250</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-7.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Ethical Hacking</h3>
+                    <div class="price">₹399 <span>₹499</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-8.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Introduction To Digital And Logical & Boolean Algebra</h3>
+                    <div class="price">₹299 <span>₹349</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-9.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Learn KANNADA In 30 Days </h3> <h1>Special discount so learn KANNADA fast</h1>
+                    <div class="price">₹49 <span>₹100</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-10.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cyber Security And Awareness</h3>
+                    <div class="price">₹149 <span>₹199</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content">
+        <h3>deal of the day</h3>
+        <h1>upto 50% off</h1>
+        <p>Where everything you need to know is only an arm’s length away!<br>The smell of books, the sight of shelves, and the spirit of learning. <br>There’s nothing like it..</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+    <div class="image">
+        <img src="image/deal-img.jpeg" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>client's reviews</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.jpg" alt="">
+                <h3>PUNEETH RAJKUMAR</h3>
+                <p>"A writer only begins a book. A reader finishes it".</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.jpeg" alt="">
+                <h3>SUDEEP</h3>
+                <p>"A reasder has always multiple view for a thing or situation,<br> and this is blessing of reading".</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.jpeg" alt="">
+                <h3>Darshan</h3>
+                <p>"Reading is the gateway skill that makes all other learning possible".</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="image/pic-4.jpeg" alt="">
+                <h3>Yash</h3>
+                <p>"Reading gives us someplace to go when we have to stay where we are".</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-5.jpeg" alt="">
+                <h3>Upendra</h3>
+                <p>"There are worse crimes than burnibng books. One of them is not reading them".</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-6.jpeg" alt="">
+                <h3>Shiva Rajkumar</h3>
+                <p>"That's the thing about books.<br> They let you travel without moving your feet".</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- reviews section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>our blogs</span> </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Swami Vivekananda</h3>
+                    <p>Swami Vivekananda was an Indian Hindu monk, public speaker, Vedanta philosopher and Yoga practitioner. He was the chief disciple of Sri Ramakrishna Paramahamsa. He is best remembered as the founder of the Ramakrishna Mission and the Ramakrishna Math.</p>
+                    <a href="https://www.bookgeeks.in/swami-vivekananda-books/" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>5 Ways in Which Fiction Books Boost Your Imagination</h3>
+                    <p>On a lazy weekend afternoon when you pick up your kindle reader to browse through the varied genres and your eyes fall on a fiction book and you decide to download it. Here are 5 ways fiction books not only develop your imaginative power but also improve your EQ.</p>
+                    <a href="https://www.bookgeeks.in/why-reading-fiction-is-good-for-you/" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>10 Books On The Partition Of India That Will Break Your Heart</h3>
+                    <p>Are you looking for books on the partition of India and Pakistan? In this article, I list 10 books which are must-reads to understand the partition of India and Pakistan. They depict moments of happiness, sadness, anger, hatred, and varied emotions.</p>
+                    <a href="https://www.bookgeeks.in/books-on-the-partition-of-india/" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image"> 
+                    <img src="image/blog-4.jpg" alt="">
+                </div>pe
+                <div class="content">
+                    <h3>Sudha Murty Books</h3>
+                    <p>With this list, we mean to convey to our readers a list of 21 of the best Sudha Murty Books out of the many written by her. A prolific writer in English and Kannada, Sudha Murty has written novels, technical books, travelogues, collections of short stories and non- fictional pieces, and books for children.</p>
+                    <a href="https://www.bookgeeks.in/sudha-murty-books-list/" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Best Books on Indian History</h3>
+                    <p>Whether it is someone looking for an overall perspective of the history of a particular era or someone willing to delve deeper into the antiquities of a particular empire – our definite guide has got everyone covered. The history books included in the list are carefully curated as to cater to the needs of every history buff</p>
+                    <a href="https://www.bookgeeks.in/best-books-on-indian-history/" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="https://goo.gl/maps/aeVh6hf95LbvP12J6"> <i class="fas fa-map-marker-alt"></i> TUMKUR</a>
+            <a href="https://goo.gl/maps/sAVNGxKT8HfuE41v9"> <i class="fas fa-map-marker-alt"></i> RAMANAGARA </a>
+            <a href="https://goo.gl/maps/jAYTiDu5QmzQhgth6"> <i class="fas fa-map-marker-alt"></i> BANGLORE </a>
+            <a href="https://goo.gl/maps/aqN1eEkAjDPSBmGTA"> <i class="fas fa-map-marker-alt"></i> MYSORE </a>
+            <a href="https://goo.gl/maps/LrunqizVAzagYAWn8"> <i class="fas fa-map-marker-alt"></i> MANDYA </a>
+           
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+            <a href="#arrivals"> <i class="fas fa-arrow-right"></i> arrivals </a>
+            <a href="#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
+            <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="https://wa.me/qr/6WKQWLDSJG2HP1"> <i class="fas fa-phone"></i> +91 7090326621 (Whatsapp)</a>
+            <a href="https://wa.me/qr/LGADYCM4M26QM1"> <i class="fas fa-phone"></i> +91 9019749775 (Whatsapp)</a>
+            <a href="tel:+91 74067 29822"> <i class="fas fa-phone"></i> +91 7406729822 (Call)</a>
+            <a href="tel:+91 70903 26621"> <i class="fas fa-phone"></i> +91 9141301284 (Call)</a>
+            <a href="mailto:ssrisrinivas0@gmail.com"> <i class="fas fa-envelope"></i> bookstorev4@gmail.com </a>
+            <img src="image/worldmap.png" class="map" alt="">
+        </div>
+        
+    </div>
+
+    <div class="share">
+        <a href="https://m.facebook.com/story.php?story_fbid=pfbid0xsMduafp3Bs6pfJ8TZW8vQbtnD7cRA5mdLaXarWk7Gy1RCN63dCk3V1Cp7NGy9Gsl&id=100083030409864&sfnsn=wiwspwa" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/sel61688429?t=OLGCOEEX5PhqGzt_EHUxZA&s=09" class="fab fa-twitter"></a>
+        <a href="https://instagram.com/booksellers3?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
+       
+    </div>
+
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+<div class="loader-container">
+    <img src="image/loader-img.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
